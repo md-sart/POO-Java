@@ -1,0 +1,66 @@
+public class veiculo{
+private string placa;
+private string motor;
+private double capTanque;
+private int ano;
+
+public veiculo (String placa, string motor, string modulo, double contraceque, int ano) {
+    this.placa = placa;
+    //inicializar demais atributos
+}
+public veiculo (){
+    //getters e setters
+    public string get placa (){
+        return placa;
+    }
+    public double calcularConsumo (double km){
+        return 0;
+    }
+} public class Moto extends Veiculo{
+    private double bagageiro;
+    public moto (string placa, string motor, string modulo, double contraceque, int ano, double bagageiro){
+    super (placa, motor, modelo, captanque, ano);
+    this.capbagageiro = capbagageiro;
+    }
+    //fazer getter e setter de capbagageiro
+    @overide
+    public double calcularConsumo (double km){
+        returno km/3.0;
+    }
+}
+public class Carro extends Veiculo {
+    private int numPortas;
+    private string tipoteto;
+    public carro (string placa, string motor, string modulo, double contraceque, int ano, int numPortas, int tipoteto){
+        super (placa, motor, modelo, captanque, ano);
+        this.numPortas = numPortas;
+        this tipoteto = tipoteto;
+        //fazer get e set dos atributos
+
+    @override
+    publix double calcularConsumo (double km){
+        return km/17;
+    }
+    }
+}
+
+//se herdamos um metodo mas com outro comportamento nos estamos
+// fazendo a operacao de sobrescrtia de metoto (uma das caracteristicas do polimorfismo)
+// @overide
+
+
+//main
+
+public class App {
+    Public static void main (string [] args)
+    carro carro1 = new carro ("abc1", "v12.0", "hb20", "50.4", 2012, 4, "solar");
+    System.out.println ("Pfv, digite quantos km vc andou");
+    double km = teclado.nextDouble();
+    double consumo = carro1.calcularConsumo(km);
+    System.out.print.ln("vc consumiu" + consumo + "litros");
+
+    moto moto1 = new moto (....)
+    //interacao
+    consumo == moto1.calcularConsumo(km);
+    System.out.print.ln("vc consumiu" + consumo + "litros");
+}
