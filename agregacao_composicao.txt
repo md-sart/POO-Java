@@ -1,0 +1,92 @@
+Agregação
+
+//para acessar um atributo privado, precisamos usar um método set
+
+podemos usar to string pra imprimir (todas as classes herdam do object, e no object existe a classe toString
+
+Composição e agregação - java
+
+se há dependência - composição
+não há - agregação
+
+public class Carro {
+private String modelo;
+private int ano;
+private Motor motor;
+
+public carro (String modelo, int ano){
+this.modelo-=nodelo
+this.ano = ano;
+}
+public Motor get Motor (_ {return motor
+public void set motor
+ (motor motor){
+this.motor=motor
+//outros getters e setters
+
+
+public class Motor{
+private String modelo;
+private double cilindrada;
+public Motor (String modelo, double cilindrada){
+this modelo = modelo
+this colindrada = cilindrada;
+}
+//fazer getters 
+
+@Override
+public String toString( ){
+return "motor de modelo: + modelo + ëalinhada’+cilindrada 
+}
+
+public class Main
+public static void main ( String [ ] args) {
+Carro carro = new carro ("Relampago marquinhos, 2003
+Motor motor = new Motor ('V8', 6.2);
+Carro.setMotor(motor);
+Sout(motor) // visualizar informacoes do motor
+Sout (carro.getMotor());
+
+//criando outro motor
+
+Motor novoMotor = new Motor ("V10", 8.4);
+carro.SetMotor (novoMotor):
+sout (carro.getMotor())
+
+
+—------------------------------
+
+Composição
+
+Public class Pessoa {
+private String nome;
+private int idade;
+private ContaBancaria Conta;
+public Pessoa (String nome, int idade){
+this.nome = nome;
+this.idade = idade;
+}
+//fazer os getters e setters
+public void a (abrirConta(String numConta){
+conta = new ContaBancaria (numConta);
+
+
+public class ContaBancaria{
+private String numConta;
+private double saldo;
+public ContaBancaria (String numConta) {
+this.numConta=numConta;
+this.saldo = 0;
+}
+//fazer getters e setters
+
+
+public class Main{
+psvm (S [] a){
+Pessoa p1 = new Pessoa ("Matheus e Kaua", 19)
+p1.abrirConta("321");
+
+
+
+
+
