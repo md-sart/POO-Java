@@ -1,9 +1,11 @@
 public class Cachorro extends Animal {
+    //atributos
     private String raca;
     private boolean farejador;
     private int nivelEnergia;
     private boolean adestrado;
 
+    //construtor
     public Cachorro(String nome, int idade, String raca, boolean farejador, int nivelEnergia, boolean adestrado) throws Exception {
         super(nome, idade);
         this.raca = raca;
@@ -46,6 +48,7 @@ public class Cachorro extends Animal {
         return adestrado;
     }
 
+    //metodo
     @Override
     public void emitirSom() {
         System.out.println("Au au!");
